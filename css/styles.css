@@ -1,0 +1,284 @@
+:root {
+  --yellow-color: #ffbb00;
+  --yellow-color-15: #ffbb0026;
+
+  --blue-color: #1487fd;
+  --black-color: #333333;
+  --grey-color: #8a8a8a;
+}
+* {
+  font-family: roboto;
+  line-height: 1.6;
+}
+
+/* HEADER START */
+
+.header-background {
+  margin: auto;
+  background-image: url("../assets/images/hero.svg");
+  background-repeat: no-repeat;
+}
+
+/* NAV START */
+
+.nav-item {
+  padding-right: 3rem;
+}
+.nav-link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-link:hover {
+  color: var(--yellow-color) !important;
+  position: relative;
+}
+.nav-link:hover:after {
+  content: "";
+  height: 3px;
+  width: 50%;
+  background: var(--yellow-color);
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+}
+.btn-nav {
+  background-color: var(--yellow-color);
+  outline: none;
+  border: none;
+  font-weight: 500;
+  color: #ffffff;
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+.btn-nav:active,
+.btn-nav:focus,
+.btn-nav:hover {
+  background-color: var(--yellow-color);
+  outline: none;
+  border: none;
+  color: #ffffff;
+}
+.btn-nav:hover {
+  border: 3px solid var(--blue-color);
+}
+
+/* NAV END */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-img {
+  margin-bottom: 5rem;
+}
+.header-content h1 {
+  font-family: poppins;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 5rem;
+}
+.header-content p {
+  font-family: poppins;
+}
+.header-content {
+  color: #fff;
+  padding-right: 10rem;
+}
+.btn-download {
+  margin-right: 1rem;
+  color: #fff;
+  font-weight: 500;
+  border: 2px solid #fff;
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  transition-duration: 0.2s;
+}
+.btn-download:hover,
+.btn-download:focus,
+.btn-download:active {
+  background-color: var(--yellow-color);
+  outline: none;
+  border: none;
+  color: #ffffff;
+}
+
+/* HEADER END */
+
+/* EC SLIDE START */
+.ec-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ec-slide-item {
+  margin-top: 10rem;
+}
+
+/* EC SLIDE END */
+
+/* ABOUT US START */
+
+.about-us-container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us-phone {
+  transform: translateX(-140px);
+}
+.about-us-text {
+  max-width: 570px;
+}
+.about-us-item h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.about-us-item p {
+  color: #8a8a8a;
+  padding-top: 1rem;
+  line-height: 1.8;
+}
+.about-us-item button {
+  outline: none;
+  border: none;
+
+  border: 2px solid transparent;
+  transition-duration: 0.2s;
+  border-radius: 10px;
+}
+#btn-about-us {
+  background-color: var(--yellow-color-15);
+  color: var(--yellow-color);
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+#btn-about-us:hover {
+  background-color: var(--yellow-color);
+  color: #fff;
+}
+.btn-store {
+  background-color: #f8f8f8;
+  margin: 0.5rem;
+}
+.btn-store:hover {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+@media (max-width: 575.98px) {
+  .header-img {
+    display: none;
+    border: none;
+  }
+  .about-us-phone {
+    display: none !important;
+  }
+  .ec-slide-container {
+    margin: 0;
+    margin-top: 3rem;
+  }
+  .about-us-container {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 768.98px) {
+  .header-background {
+    background-image: url(../assets/images/herostright.svg);
+  }
+  .about-us-item {
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us-phone {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .about-us-item h2,
+  .about-us-item p,
+  .about-us-item button {
+    text-align: center;
+  }
+  #btn-about-us {
+    margin-top: 2rem;
+  }
+  .btn-store {
+    display: block;
+  }
+}
+@media (max-width: 991.98px) {
+  .nav-link:hover:after {
+    left: 0;
+    width: 15%;
+  }
+  .btn-nav {
+    margin-top: 1rem;
+    padding: 0.8rem 0;
+    width: auto;
+    height: auto;
+  }
+  .ec-slide-item {
+    display: inline-block;
+
+    margin: auto;
+  }
+  .ec-slide-item-collapse {
+    display: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .nav-item {
+    padding-right: 1.5rem;
+  }
+  .header-container {
+    flex-direction: column;
+    align-self: center;
+  }
+  .header-content {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 1399.98px) {
+  .about-us-container {
+    flex-direction: column;
+    align-self: center;
+  }
+}
+@media (max-width: 1550px) {
+  .nav-item {
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 1600px) {
+  .header-content {
+    padding: 0;
+    text-align: center;
+  }
+  .about-us-phone {
+    transform: translateX(0);
+  }
+}
+@media (min-width: 1921px) {
+  .container-bg {
+    background-image: url(../assets/images/herostright.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header-background {
+    background: transparent;
+  }
+}
