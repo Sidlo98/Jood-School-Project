@@ -89,7 +89,7 @@
 }
 .header-content {
   color: #fff;
-  padding-right: 10rem;
+  padding-right: 5rem;
 }
 .btn-download {
   margin-right: 1rem;
@@ -129,6 +129,7 @@
 
 .about-us-container {
   margin-top: 10rem;
+  margin-bottom: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,7 +152,6 @@
 .about-us-item button {
   outline: none;
   border: none;
-
   border: 2px solid transparent;
   transition-duration: 0.2s;
   border-radius: 10px;
@@ -159,7 +159,7 @@
 #btn-about-us {
   background-color: var(--yellow-color-15);
   color: var(--yellow-color);
-  padding: 0.3rem 0.7rem;
+  padding: 0.2rem 0.7rem;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
@@ -176,6 +176,80 @@
   border: 2px solid black;
 }
 
+/* ABOUT US END */
+
+/* FEATURES START */
+
+.features-bg {
+  background-image: url("../assets/images/Featuresbg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.features-phone {
+  transform: translateX(100px);
+  margin: 5rem 0;
+}
+.features-text h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 499px;
+}
+.features-text p {
+  color: #8a8a8a;
+  margin-bottom: 2.5rem;
+}
+.features-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-card {
+  max-width: 286px;
+  display: flex;
+}
+.features-card h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.features-card p {
+  font-size: 0.9rem;
+  color: #8a8a8a;
+}
+.features-icon {
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+}
+.features-card-2,
+.features-card-4 {
+  transform: translateX(100px);
+}
+
+.features-text button {
+  outline: none;
+  border: none;
+  border: 2px solid transparent;
+  transition-duration: 0.2s;
+  border-radius: 10px;
+}
+#btn-features {
+  background-color: var(--yellow-color-15);
+  color: var(--yellow-color);
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+}
+#btn-features:hover {
+  background-color: var(--yellow-color);
+  color: #fff;
+}
+/* FEATURES END */
+
 @media (max-width: 575.98px) {
   .header-img {
     display: none;
@@ -190,6 +264,14 @@
   }
   .about-us-container {
     margin-top: 3rem;
+  }
+}
+@media (max-width: 630px) {
+  .features-phone {
+    display: none;
+  }
+  #btn-features {
+    margin-top: 2rem;
   }
 }
 @media (max-width: 768.98px) {
@@ -209,14 +291,31 @@
 
   .about-us-item h2,
   .about-us-item p,
-  .about-us-item button {
+  .about-us-item button .features-content features-text h2,
+  .features-text p {
     text-align: center;
   }
+  #features-h2 {
+    text-align: center;
+  }
+
   #btn-about-us {
     margin-top: 2rem;
   }
   .btn-store {
     display: block;
+  }
+  .features-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .features-text button {
+    align-self: center;
+  }
+  .features-card {
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
   }
 }
 @media (max-width: 991.98px) {
@@ -232,7 +331,6 @@
   }
   .ec-slide-item {
     display: inline-block;
-
     margin: auto;
   }
   .ec-slide-item-collapse {
@@ -257,6 +355,29 @@
     flex-direction: column;
     align-self: center;
   }
+  .features-card-2,
+  .features-card-4 {
+    transform: translateX(0) !important;
+  }
+  .features-container {
+    flex-direction: column-reverse;
+    align-self: center;
+  }
+  .features-bg {
+    background-repeat: repeat;
+  }
+  .features-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .features-cards {
+    max-width: 600px;
+    justify-content: space-between;
+  }
+  .features-text {
+    max-width: 570px;
+    margin-bottom: 1rem;
+  }
 }
 @media (max-width: 1550px) {
   .nav-item {
@@ -271,14 +392,26 @@
   .about-us-phone {
     transform: translateX(0);
   }
+  .features-phone {
+    transform: translateX(0);
+  }
+  .features-card-2,
+  .features-card-4 {
+    transform: translateX(20px);
+  }
 }
-@media (min-width: 1921px) {
+@media (min-width: 1920.98px) {
   .container-bg {
-    background-image: url(../assets/images/herostright.svg);
+    background-image: url(../assets/images/herostrightbig.svg);
     background-position: center;
     background-repeat: no-repeat;
   }
   .header-background {
     background: transparent;
+  }
+}
+@media (min-width: 1399.98px) {
+  .container {
+    max-width: 1200px;
   }
 }
