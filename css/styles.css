@@ -360,6 +360,101 @@
   margin-top: 2rem;
 }
 /* DOWNLOAD END */
+
+/* CONTATCT US START */
+.contact-us-container .contact-us-text {
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+.contact-us-container .contact-us-text h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.contact-us-container .contact-us-text p {
+  color: #8a8a8a;
+}
+.form-control {
+  border: none;
+  background-color: #fbfbfb;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+::placeholder {
+  color: #cccccc !important;
+  opacity: 1;
+  font-family: roboto;
+}
+:-ms-input-placeholder {
+  color: #cccccc !important;
+  font-family: roboto;
+}
+::-ms-input-placeholder {
+  color: #cccccc !important;
+  font-family: roboto;
+}
+.btn-contact-us {
+  background-color: var(--blue-color);
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 220px;
+  height: 60px;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+/* CONTATCT US END */
+/* FOOTER START */
+.footer-bg {
+  background-image: url("/assets/images/Footerbg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.5rem;
+}
+.footer-links,
+.footer-links li a,
+.footer-social-icons,
+.footer-social-icons li a,
+.footer-social-icons li a i {
+  align-self: center;
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  padding: 0.5rem;
+  margin: 0;
+}
+.footer-links li a {
+  font-size: 1.13rem;
+  font-weight: 400;
+  margin: 0.8rem;
+}
+.footer-social-icons li a i {
+  margin-bottom: 3rem;
+  font-size: 1.13rem;
+  background-color: #ffffff26;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social-icons li a {
+  padding: 0;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+/* FOOTER END */
 @media (max-width: 575.98px) {
   .header-img {
     display: none;
@@ -442,6 +537,17 @@
   .download-text button {
     margin: auto;
     margin-bottom: 1rem;
+  }
+  ul.footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  ul.footer-links li a {
+    justify-content: space-around;
+  }
+  .footer-bg {
+    background-image: none;
+    background-color: var(--blue-color);
   }
 }
 @media (max-width: 991.98px) {
