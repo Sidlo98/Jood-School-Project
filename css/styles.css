@@ -102,6 +102,11 @@
   outline: none;
   transition-duration: 0.2s;
 }
+
+.btn-watch:hover {
+  background-color: var(--blue-color);
+  border-radius: 10px;
+}
 .btn-download:hover,
 .btn-download:focus,
 .btn-download:active {
@@ -405,6 +410,10 @@
   margin-top: 2rem;
   margin-bottom: 6rem;
 }
+.btn-contact-us:hover {
+  color: var(--yellow-color);
+  transition: ease-in-out;
+}
 /* CONTATCT US END */
 /* FOOTER START */
 .footer-bg {
@@ -452,6 +461,11 @@
   padding: 0;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
+}
+.footer-links li a:hover,
+.footer-social-icons li i:hover {
+  color: var(--yellow-color);
+  transition: ease-in-out;
 }
 
 /* FOOTER END */
