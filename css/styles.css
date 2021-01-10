@@ -1,7 +1,6 @@
 :root {
   --yellow-color: #ffbb00;
   --yellow-color-15: #ffbb0026;
-
   --blue-color: #1487fd;
   --black-color: #333333;
   --grey-color: #8a8a8a;
@@ -10,17 +9,10 @@
   font-family: roboto;
   line-height: 1.6;
 }
-
-/* HEADER START */
-
-.header-background {
-  margin: auto;
-  background-image: url("../assets/images/hero.svg");
-  background-repeat: no-repeat;
+p {
+  color: var(--grey-color);
 }
-
 /* NAV START */
-
 .nav-item {
   padding-right: 3rem;
 }
@@ -67,8 +59,14 @@
 .btn-nav:hover {
   border: 3px solid var(--blue-color);
 }
-
 /* NAV END */
+
+/* HEADER START */
+.header-background {
+  margin: auto;
+  background-image: url("../assets/images/hero.svg");
+  background-repeat: no-repeat;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -86,6 +84,7 @@
 }
 .header-content p {
   font-family: poppins;
+  color: #ffffff !important;
 }
 .header-content {
   color: #fff;
@@ -102,7 +101,6 @@
   outline: none;
   transition-duration: 0.2s;
 }
-
 .btn-watch:hover {
   background-color: var(--blue-color);
   border-radius: 10px;
@@ -115,7 +113,6 @@
   border: none;
   color: #ffffff;
 }
-
 /* HEADER END */
 
 /* EC SLIDE START */
@@ -127,11 +124,9 @@
 .ec-slide-item {
   margin-top: 10rem;
 }
-
 /* EC SLIDE END */
 
 /* ABOUT US START */
-
 .about-us-container {
   margin-top: 10rem;
   margin-bottom: 10rem;
@@ -150,7 +145,6 @@
   font-weight: 800;
 }
 .about-us-item p {
-  color: #8a8a8a;
   padding-top: 1rem;
   line-height: 1.8;
 }
@@ -180,11 +174,9 @@
   border-radius: 10px;
   border: 2px solid black;
 }
-
 /* ABOUT US END */
 
 /* FEATURES START */
-
 .features-bg {
   background-image: url("../assets/images/Featuresbg.svg");
   background-repeat: no-repeat;
@@ -207,7 +199,6 @@
   max-width: 499px;
 }
 .features-text p {
-  color: #8a8a8a;
   margin-bottom: 2.5rem;
 }
 .features-cards {
@@ -224,7 +215,6 @@
 }
 .features-card p {
   font-size: 0.9rem;
-  color: #8a8a8a;
 }
 .features-icon {
   padding-right: 1rem;
@@ -253,7 +243,7 @@
 }
 /* FEATURES END */
 
-/* APPLICATION START */
+/* APPLICATION-SCREENS START */
 .application-container {
   max-width: 1400px !important;
 }
@@ -264,9 +254,6 @@
 .application-text h2 {
   font-weight: 900;
   font-size: 2.5rem;
-}
-.application-text p {
-  color: #8a8a8a;
 }
 .swiper-container {
   height: 700px;
@@ -286,9 +273,9 @@
   background-position: center;
   padding: 2.5rem;
 }
-/* APPLICATION END */
+/* APPLICATION-SCREENS END */
 
-/* APPLICATION-STAT START */
+/* APPLICATION-STATISTICS START */
 .application-stat-container {
   background-image: url("/assets/images/applicationstatbg.svg");
   background-repeat: no-repeat;
@@ -307,9 +294,7 @@
 }
 .application-stat-text p {
   margin-top: 1rem;
-  color: #8a8a8a;
 }
-
 .application-stat-content {
   display: flex;
   justify-content: space-around;
@@ -329,7 +314,8 @@
   font-size: 2.5rem;
   font-weight: bold;
 }
-/* APPLICATION-STAT END */
+/* APPLICATION-STATISTICS END */
+
 /* DOWNLOAD START */
 .download-bg {
   background-image: url("/assets/images/downloadbg.svg");
@@ -346,8 +332,9 @@
   transform: translateX(110px);
   max-width: 482px;
 }
-.download-text {
-  color: #ffffff;
+.download-text,
+.download-text p {
+  color: #ffffff !important;
 }
 .download-text h2 {
   font-size: 3.1rem;
@@ -375,9 +362,6 @@
 .contact-us-container .contact-us-text h2 {
   font-size: 2.5rem;
   font-weight: 900;
-}
-.contact-us-container .contact-us-text p {
-  color: #8a8a8a;
 }
 .form-control {
   border: none;
@@ -415,6 +399,7 @@
   transition: ease-in-out;
 }
 /* CONTATCT US END */
+
 /* FOOTER START */
 .footer-bg {
   background-image: url("/assets/images/Footerbg.svg");
@@ -467,25 +452,20 @@
   color: var(--yellow-color);
   transition: ease-in-out;
 }
-
 /* FOOTER END */
+
+/* MEDIAQUARIES START */
 @media (max-width: 575.98px) {
-  .header-img {
-    display: none;
+  .header-img,
+  .about-us-phone,
+  .download-phones {
+    display: none !important;
     border: none;
   }
-  .about-us-phone {
-    display: none !important;
-  }
-  .ec-slide-container {
+  .ec-slide-container,
+  .about-us-container {
     margin: 0;
     margin-top: 3rem;
-  }
-  .about-us-container {
-    margin-top: 3rem;
-  }
-  .download-phones {
-    display: none;
   }
   .download-text h2 {
     font-size: 2rem;
@@ -513,17 +493,13 @@
     max-width: 100%;
     margin: auto;
   }
-
   .about-us-item h2,
   .about-us-item p,
   .about-us-item button .features-content features-text h2,
-  .features-text p {
-    text-align: center;
-  }
+  .features-text p,
   #features-h2 {
     text-align: center;
   }
-
   #btn-about-us {
     margin-top: 2rem;
   }
@@ -659,9 +635,7 @@
     padding: 0;
     text-align: center;
   }
-  .about-us-phone {
-    transform: translateX(0);
-  }
+  .about-us-phone,
   .features-phone {
     transform: translateX(0);
   }
@@ -685,3 +659,4 @@
     max-width: 1200px;
   }
 }
+/* MEDIAQUARIES END */
