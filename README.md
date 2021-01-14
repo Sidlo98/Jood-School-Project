@@ -1,7 +1,7 @@
 # Jood-School-Project
 Second School Project i HTML/CSS
 
-https://sidlo98.github.io/Jood-School-Project/#
+https://sidlo98.github.io/Jood-School-Project/
 
 Instructions:
 
