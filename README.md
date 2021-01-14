@@ -1,6 +1,8 @@
 # Jood-School-Project
 Second School Project i HTML/CSS
 
+https://sidlo98.github.io/Jood-School-Project/#
+
 Instructions:
 
 In this assignment, you will create a front page for the fictional company Jood. The design of the page can be found in this Adobe XD file. You should imitate the design as much as possible. Some deviations may occur, but it should be as similar as possible. Remember to use things like flexbox, css-grid, positioning and media queries etc.
