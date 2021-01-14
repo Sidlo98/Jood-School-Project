@@ -43,7 +43,7 @@
     <header class="header-background">
       <div class="container-bg">
         <!-- NAV START -->
-        <nav class="navbar navbar-expand-lg navbar-dark pt-4">
+        <nav id="home" class="navbar navbar-expand-lg navbar-dark pt-4">
           <div class="container">
             <a href="#" class="navbar-brand"
               ><img src="./assets/images/logo.svg" alt=""
@@ -62,27 +62,42 @@
             <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="#home"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="#about-us"
                     >About Us</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="#features"
                     >Features</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="#screens"
                     >Screens</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="#"
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="#contact-us"
                     >Contact Us</a
                   >
                 </li>
@@ -102,7 +117,9 @@
               Lorem Ipsum is simply dummy text of the printing and <br />
               typesetting industry Lorem Ipsum is simply
             </p>
-            <button class="btn btn-download">Download Now</button>
+            <a href="#download"
+              ><button class="btn btn-download">Download Now</button></a
+            >
             <button class="btn btn-watch">
               <img src="./assets/images/watchicon.svg" alt="" />
             </button>
@@ -110,7 +127,7 @@
 
           <img
             class="header-img mt-4 animate__animated animate__fadeInRight"
-            src="./assets/images/Phones.svg"
+            src="./assets/images/Phones.png"
             alt="Two phones"
           />
         </section>
@@ -150,10 +167,10 @@
     <!-- EC SLIDE END -->
 
     <!-- ABOUT US START -->
-    <section class="container about-us-container">
+    <section id="about-us" class="container about-us-container">
       <img
         class="about-us-item about-us-phone"
-        src="./assets/images/bgwithphone.svg"
+        src="./assets/images/bgwithiPhone.png"
         alt=""
       />
 
@@ -189,7 +206,7 @@
 
     <!-- FEATURES START -->
     <div class="features-bg">
-      <section class="container features-container">
+      <section id="features" class="container features-container">
         <div class="features-content">
           <div
             class="features-text animate__animated wow bounceInUp animate__slideInDown"
@@ -252,14 +269,14 @@
         </div>
 
         <figure class="features-phone">
-          <img src="./assets/images/featuresphones.svg" alt="" />
+          <img src="./assets/images/featuresphones.png" alt="" />
         </figure>
       </section>
     </div>
     <!-- FEATURES END -->
 
     <!-- APPLICATION SCREENS START -->
-    <section class="container application-container">
+    <section id="screens" class="container application-container">
       <div class="application-text">
         <h2>Application Screens</h2>
         <p>
@@ -336,7 +353,7 @@
     <!-- APPLICATION STATISTICS START -->
 
     <!-- DOWNLOAD START -->
-    <div class="download-bg">
+    <div id="download" class="download-bg">
       <section class="container download-container">
         <div class="download-text">
           <h2>Download the application now ! to enjoy its features</h2>
@@ -356,7 +373,7 @@
 
         <img
           class="download-phones"
-          src="./assets/images/downloadphones.svg"
+          src="./assets/images/downloadphones.png"
           alt=""
         />
       </section>
@@ -364,7 +381,7 @@
     <!-- DOWNLOAD START -->
 
     <!-- CONTACT US START -->
-    <section class="container contact-us-container">
+    <section id="contact-us" class="container contact-us-container">
       <div class="contact-us-text">
         <h2>Contact Us</h2>
         <p>
@@ -431,27 +448,27 @@
           <li
             class="footer-link animate__animated wow bounceInUp animate__slideInDown"
           >
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li
             class="footer-link animate__animated wow bounceInUp animate__slideInDown"
           >
-            <a href="#">About Us</a>
+            <a href="#about-us">About Us</a>
           </li>
           <li
             class="footer-link animate__animated wow bounceInUp animate__slideInDown"
           >
-            <a href="#">Features</a>
+            <a href="#features">Features</a>
           </li>
           <li
             class="footer-link animate__animated wow bounceInUp animate__slideInDown"
           >
-            <a href="#">Screens</a>
+            <a href="#screens">Screens</a>
           </li>
           <li
             class="footer-link animate__animated wow bounceInUp animate__slideInDown"
           >
-            <a href="#">Contact Us</a>
+            <a href="#contact-us">Contact Us</a>
           </li>
         </ul>
 
@@ -459,16 +476,22 @@
           class="footer-social-icons animate__animated wow bounceInUp animate__backInUp"
         >
           <li class="footer-social-icon">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
           </li>
           <li class="footer-social-icon">
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
           </li>
           <li class="footer-social-icon">
-            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </li>
           <li class="footer-social-icon">
-            <a href=""><i class="fab fa-google-plus-g"></i></a>
+            <a href="https://www.google.se/"
+              ><i class="fab fa-google-plus-g"></i
+            ></a>
           </li>
         </ul>
       </footer>
