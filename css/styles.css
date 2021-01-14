@@ -41,7 +41,7 @@ p {
 .btn-nav {
   background-color: var(--yellow-color);
   outline: none;
-  border: none;
+  border: 3px solid transparent;
   font-weight: 500;
   color: #ffffff;
   width: 160px;
@@ -50,11 +50,9 @@ p {
   transition-duration: 0.2s;
 }
 .btn-nav:active,
-.btn-nav:focus,
-.btn-nav:hover {
+.btn-nav:focus {
   background-color: var(--yellow-color);
   outline: none;
-  border: none;
   color: #ffffff;
 }
 .btn-nav:hover {
@@ -407,11 +405,15 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .footer-container {
   display: flex;
   flex-direction: column;
   padding-top: 3.5rem;
 }
+.footer-container img {
+}
+
 .footer-links,
 .footer-links li a,
 .footer-social-icons,
