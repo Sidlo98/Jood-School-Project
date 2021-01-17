@@ -90,6 +90,7 @@ p {
 }
 .header-content {
   color: #fff;
+  margin-bottom: 3rem;
 }
 .btn-download {
   margin-right: 1rem;
@@ -407,7 +408,6 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -458,6 +458,10 @@ p {
 
 /* MEDIAQUARIES START */
 @media (max-width: 575.98px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
   .header-img,
   .about-us-phone,
   .download-phones {
