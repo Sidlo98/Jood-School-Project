@@ -136,8 +136,16 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.about-us-phone {
-  transform: translateX(-140px);
+.about-us-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.about-us-bg {
+  position: absolute;
+  top: 25px;
+  z-index: -1;
+  animation: rotate 5s infinite linear;
 }
 .about-us-text {
   max-width: 570px;
@@ -456,6 +464,17 @@ p {
 }
 /* FOOTER END */
 
+/* ANIMATIONS START */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ANIMATIONS END */
+
 /* MEDIAQUARIES START */
 @media (max-width: 575.98px) {
   .header-content h1 {
@@ -464,6 +483,7 @@ p {
   }
   .header-img,
   .about-us-phone,
+  .about-us-bg,
   .download-phones {
     display: none !important;
     border: none;

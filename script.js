@@ -1,6 +1,7 @@
 new WOW().init();
 var mySwiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
+      slideToClickedSlide:true,
+      grabCursor:true,
       spaceBetween: 10,
       loop:true,
       centeredSlides:true,
